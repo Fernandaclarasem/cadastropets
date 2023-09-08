@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaizinhos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Animais de Estimação</h1>
+
+    <div class="container">
+        <form id="petForm">
+            <input type="text" id="speciesInput" placeholder="Espécie" required>
+            <input type="text" id="nameInput" placeholder="Nome" required>
+            <input type="text" id="colorInput" placeholder="Cor/Raça" required>
+            <button type="submit">Salvar</button>
+            <button type="button" id="cancelButton" style="display:none;">Cancelar</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Espécie</th>
+                    <th>Nome</th>
+                    <th>Cor/Raça</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="petList"></tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
